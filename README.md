@@ -1,53 +1,142 @@
-<p align="center">
-	<a href="https://pmmp.io">
-		<!--[if IE]>
-			<img src="https://github.com/pmmp/PocketMine-MP/blob/stable/.github/readme/pocketmine.png" alt="The PocketMine-MP logo" title="PocketMine" loading="eager" />
-		<![endif]-->
-		<picture>
-			<source srcset="https://github.com/pmmp/PocketMine-MP/raw/stable/.github/readme/pocketmine-dark.png" media="(prefers-color-scheme: dark)">
-			<img src="https://github.com/pmmp/PocketMine-MP/raw/stable/.github/readme/pocketmine.png" loading="eager" />
-		</picture>
-	</a><br>
-	<b>A highly customisable, open source server software for Minecraft: Bedrock Edition written in PHP</b>
-</p>
+<div align="center">
+    <a href="https://php.net">
+        <img
+            alt="PHP"
+            src="https://www.php.net/images/logos/new-php-logo.svg"
+            width="150">
+    </a>
+</div>
 
-<p align="center">
-	<a href="https://github.com/pmmp/PocketMine-MP/actions/workflows/main.yml"><img src="https://github.com/pmmp/PocketMine-MP/workflows/CI/badge.svg" alt="CI" /></a>
-	<a href="https://github.com/pmmp/PocketMine-MP/releases/latest"><img alt="GitHub release (latest SemVer)" src="https://img.shields.io/github/v/release/pmmp/PocketMine-MP?label=release&sort=semver"></a>
-	<a href="https://hub.docker.com/r/pmmp/pocketmine-mp"><img src="https://img.shields.io/docker/v/pmmp/pocketmine-mp?logo=docker&label=image" alt="Docker image version (latest semver)" /></a>
-	<a href="https://discord.gg/bmSAZBG"><img src="https://img.shields.io/discord/373199722573201408?label=discord&color=7289DA&logo=discord" alt="Discord" /></a>
-	<br>
-	<a href="https://github.com/pmmp/PocketMine-MP/releases"><img alt="GitHub all releases" src="https://img.shields.io/github/downloads/pmmp/PocketMine-MP/total?label=downloads%40total"></a>
-	<a href="https://github.com/pmmp/PocketMine-MP/releases/latest"><img alt="GitHub release (latest by SemVer)" src="https://img.shields.io/github/downloads/pmmp/PocketMine-MP/latest/total?sort=semver"></a>
-</p>
+# The PHP Interpreter
 
-## Getting started
-- [Documentation](http://pmmp.readthedocs.org/)
-- [Installation instructions](https://pmmp.readthedocs.io/en/rtfd/installation.html)
-- [Docker image](https://hub.docker.com/r/pmmp/pocketmine-mp)
-- [Plugin repository](https://poggit.pmmp.io/plugins)
+PHP is a popular general-purpose scripting language that is especially suited to
+web development. Fast, flexible and pragmatic, PHP powers everything from your
+blog to the most popular websites in the world. PHP is distributed under the
+[PHP License v3.01](LICENSE).
 
-## Discussion/Help
-- [Forums](https://forums.pmmp.io/)
-- [Discord](https://discord.gg/bmSAZBG)
-- [StackOverflow](https://stackoverflow.com/tags/pocketmine)
+[![Push](https://github.com/php/php-src/actions/workflows/push.yml/badge.svg)](https://github.com/php/php-src/actions/workflows/push.yml)
+[![Build status](https://travis-ci.com/php/php-src.svg?branch=master)](https://travis-ci.com/github/php/php-src)
+[![Build status](https://ci.appveyor.com/api/projects/status/meyur6fviaxgdwdy/branch/master?svg=true)](https://ci.appveyor.com/project/php/php-src)
+[![Build Status](https://dev.azure.com/phpazuredevops/php/_apis/build/status/php.php-src?branchName=master)](https://dev.azure.com/phpazuredevops/php/_build/latest?definitionId=1&branchName=master)
+[![Fuzzing Status](https://oss-fuzz-build-logs.storage.googleapis.com/badges/php.svg)](https://bugs.chromium.org/p/oss-fuzz/issues/list?sort=-opened&can=1&q=proj:php)
 
-## For developers
- * [Building and running from source](BUILDING.md)
- * [Developer documentation](https://devdoc.pmmp.io) - General documentation for PocketMine-MP plugin developers
- * [Latest release API documentation](https://apidoc.pmmp.io) - Doxygen API documentation generated for each release
- * [Latest bleeding-edge API documentation](https://apidoc-dev.pmmp.io) - Doxygen API documentation generated weekly from `next-major` branch
- * [DevTools](https://github.com/pmmp/DevTools/) - Development tools plugin for creating plugins
- * [ExamplePlugin](https://github.com/pmmp/ExamplePlugin/) - Example plugin demonstrating some basic API features
- * [Contributing Guidelines](CONTRIBUTING.md)
+## Documentation
 
-## Donate
-- Bitcoin Cash (BCH): `qq3r46hn6ljnhnqnfwxt5pg3g447eq9jhvw5ddfear`
-- Bitcoin (BTC): `171u8K9e4FtU6j3e5sqNoxKUgEw9qWQdRV`
-- Stellar Lumens (XLM): `GAAC5WZ33HCTE3BFJFZJXONMEIBNHFLBXM2HJVAZHXXPYA3HP5XPPS7T`
-- [Patreon](https://www.patreon.com/pocketminemp)
+The PHP manual is available at [php.net/docs](https://php.net/docs).
 
-## Licensing information
-This project is licensed under LGPL-3.0. Please see the [LICENSE](/LICENSE) file for details.
+## Installation
 
-pmmp/PocketMine are not affiliated with Mojang. All brands and trademarks belong to their respective owners. PocketMine-MP is not a Mojang-approved software, nor is it associated with Mojang.
+### Prebuilt packages and binaries
+
+Prebuilt packages and binaries can be used to get up and running fast with PHP.
+
+For Windows, the PHP binaries can be obtained from
+[windows.php.net](https://windows.php.net). After extracting the archive the
+`*.exe` files are ready to use.
+
+For other systems, see the [installation chapter](https://php.net/install).
+
+### Building PHP source code
+
+*For Windows, see [Build your own PHP on Windows](https://wiki.php.net/internals/windows/stepbystepbuild_sdk_2).*
+
+For a minimal PHP build from Git, you will need autoconf, bison, and re2c. For
+a default build, you will additionally need libxml2 and libsqlite3.
+
+On Ubuntu, you can install these using:
+
+    sudo apt install -y pkg-config build-essential autoconf bison re2c \
+                        libxml2-dev libsqlite3-dev
+
+On Fedora, you can install these using:
+
+    sudo dnf install re2c bison autoconf make libtool ccache libxml2-devel sqlite-devel
+
+Generate configure:
+
+    ./buildconf
+
+Configure your build. `--enable-debug` is recommended for development, see
+`./configure --help` for a full list of options.
+
+    # For development
+    ./configure --enable-debug
+    # For production
+    ./configure
+
+Build PHP. To speed up the build, specify the maximum number of jobs using `-j`:
+
+    make -j4
+
+The number of jobs should usually match the number of available cores, which
+can be determined using `nproc`.
+
+## Testing PHP source code
+
+PHP ships with an extensive test suite, the command `make test` is used after
+successful compilation of the sources to run this test suite.
+
+It is possible to run tests using multiple cores by setting `-jN` in
+`TEST_PHP_ARGS`:
+
+    make TEST_PHP_ARGS=-j4 test
+
+Shall run `make test` with a maximum of 4 concurrent jobs: Generally the maximum
+number of jobs should not exceed the number of cores available.
+
+The [qa.php.net](https://qa.php.net) site provides more detailed info about
+testing and quality assurance.
+
+## Installing PHP built from source
+
+After a successful build (and test), PHP may be installed with:
+
+    make install
+
+Depending on your permissions and prefix, `make install` may need super user
+permissions.
+
+## PHP extensions
+
+Extensions provide additional functionality on top of PHP. PHP consists of many
+essential bundled extensions. Additional extensions can be found in the PHP
+Extension Community Library - [PECL](https://pecl.php.net).
+
+## Contributing
+
+The PHP source code is located in the Git repository at
+[github.com/php/php-src](https://github.com/php/php-src). Contributions are most
+welcome by forking the repository and sending a pull request.
+
+Discussions are done on GitHub, but depending on the topic can also be relayed
+to the official PHP developer mailing list internals@lists.php.net.
+
+New features require an RFC and must be accepted by the developers. See
+[Request for comments - RFC](https://wiki.php.net/rfc) and
+[Voting on PHP features](https://wiki.php.net/rfc/voting) for more information
+on the process.
+
+Bug fixes don't require an RFC. If the bug has a GitHub issue, reference it in
+the commit message using `GH-NNNNNN`. Use `#NNNNNN` for tickets in the old
+[bugs.php.net](https://bugs.php.net) bug tracker.
+
+    Fix GH-7815: php_uname doesn't recognise latest Windows versions
+    Fix #55371: get_magic_quotes_gpc() throws deprecation warning
+
+See [Git workflow](https://wiki.php.net/vcs/gitworkflow) for details on how pull
+requests are merged.
+
+### Guidelines for contributors
+
+See further documents in the repository for more information on how to
+contribute:
+
+- [Contributing to PHP](/CONTRIBUTING.md)
+- [PHP coding standards](/CODING_STANDARDS.md)
+- [Mailing list rules](/docs/mailinglist-rules.md)
+- [PHP release process](/docs/release-process.md)
+
+## Credits
+
+For the list of people who've put work into PHP, please see the
+[PHP credits page](https://php.net/credits.php).
